@@ -3,7 +3,7 @@
 % \usepackage{blindtext}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper, width=140mm, top=18mm, bottom=22mm, includeheadfoot]{geometry}  % set the margins to (_)in on all sides
+\usepackage{geometry}  % set the margins to (_)in on all sides
 \usepackage{graphicx}              % to include figures
 \usepackage{amsmath}               % great math stuff
 \usepackage{amssymb}
@@ -72,7 +72,7 @@
 
 
 \title{Remarks on Loopring: Draft}
-\author{Supersimmetry\\
+\author{Supersymmetry\\
         \texttt{da447m@yahoo.com}}
 
 \date{}
@@ -83,8 +83,8 @@
 The purpose of this document is to provide an easy to understand explanation of the ideas behind the mathematics in Loopring's White Paper, having in mind those with no background in the subject. It requires only high school math. I'm not part of the Loopring organization, this paper reflects only my personal analysis.
 \end{abstract}
 
-\tableofcontents
-\clearpage
+% \tableofcontents
+% \clearpage
 
 \section{The anatomy of a trade}\label{sect:sect1}
 
@@ -142,7 +142,7 @@ This means that all the $n$ orders $O$ form a closed ring of orders, connected a
     \def\dialLabelOffset{.2}                                % label radial offset
     %
     % Dependent parameters
-    \pgfmathsetmacro\angleTip{-10.5*\dth+\angleOffset}      % tip angle
+    % \pgfmathsetmacro\angleTip{-10.5*\dth+\angleOffset}      % tip angle
     \pgfmathsetmacro\dialLabelR{\dialR+\dialLabelOffset}    % label radius
     %   
     % draw arc
